@@ -1,0 +1,27 @@
+* {
+    border: 1px solid red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .left img {
+    flex: none;
+}
+
+.header .left .company-name {
+    font-size: 32px;
+}
+
+.header .right ul {
+    display: flex;
+}
