@@ -1,27 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
-    border: 1px solid red;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 0px solid red;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
 }
+
+
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px;
 }
 
 .header .left {
-    display: flex;
-    align-items: center;
+    flex: none;
 }
 
 .header .left img {
     flex: none;
+    margin-right: 40px;
 }
 
-.header .left .company-name {
-    font-size: 32px;
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.header .right ul {
+li {
+    flex: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 24px;
+    color: 
+    rgb(70, 70, 70);
+}
+
+
+
+
+.introduction {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.introduction .title {
+    font-size: 72px;
+    font-weight: 500;
+    color: #5cb4bc;
+    padding: 24px;
+    flex: 1;
+}
+
+.introduction img {
+    flex: 1;
+    border-radius: 5%;
+}
+
+.buttons {
     display: flex;
 }
