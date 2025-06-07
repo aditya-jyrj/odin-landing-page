@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --agape-rose: #d91f69;
+    --agape-teal: #209ba4;
+    --text-color: rgb(70, 70, 70);
+    --gray-bg: #f7f7f7;
+}
+
 * {
     border: 0px solid red;
     margin: 0;
@@ -7,8 +14,6 @@
     font-family: Inter, sans-serif;
     font-weight: 400;
 }
-
-
 
 .header {
     display: flex;
@@ -40,8 +45,8 @@ li {
 a {
     text-decoration: none;
     margin: 0 24px;
-    color: 
-    rgb(70, 70, 70);
+    color: var(--text-color);
+    font-weight: 500;
 }
 
 
@@ -49,23 +54,47 @@ a {
 
 .introduction {
     display: flex;
-    padding: 40px;
+    flex-wrap: wrap;
+    padding: 32px;
     justify-content: center;
+    align-items: center;
+    background-color: var(--gray-bg);
+    gap: 32px;
+}
+
+.introduction .content {
+    flex: 1 1 auto;
+    max-width:350px;
 }
 
 .introduction .title {
-    font-size: 72px;
-    font-weight: 500;
-    color: #5cb4bc;
-    padding: 24px;
-    flex: 1;
+    font-size: 64px;
+    font-weight: 200;
+    margin-bottom: 16px;
 }
 
 .introduction img {
-    flex: 1;
-    border-radius: 5%;
+    flex: 0.4 0 auto;
+    border-radius: 8px;
 }
 
 .buttons {
     display: flex;
+    gap: 16px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.buttons .learn-more {
+    color: white;
+    background-color: var(--agape-teal);
+}
+
+.buttons .call-us {
+    color: white;
+    background-color: var(--agape-rose);
 }
