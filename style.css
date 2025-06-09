@@ -34,6 +34,7 @@
 ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
 }
@@ -97,4 +98,38 @@ button {
 .buttons .call-us {
     color: white;
     background-color: var(--agape-rose);
+}
+
+
+
+
+.our-teachers {
+    padding: 32px;
+}
+
+.our-teachers .title {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.our-teachers .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-teachers .half {
+    display: flex;
+    justify-content: center;
+}
+
+.our-teachers .card {
+    text-align: center;
+    padding: 16px;
+}
+
+.our-teachers .teacher-photo img {
+    border-radius: 8px;
+
 }
